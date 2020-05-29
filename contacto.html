@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponte en contacto con nosotros</title>
+</head>
+<body>
+    <h1>Usa el siguiente formulario para ponerte en contacto con nosotros</h1>
+    <form action="contacto.php" method="get">
+        <label for="nombre">Escribe tu nombre completo</label>
+        <input type="text" name="nombre" id="nombre" required><br>
+        <label for="correo">Escribe tu correo electrónico</label>
+        <input type="email" name="correo" id="correo" required><br>
+        <label for="edad">Selecciona tu edad</label>
+        <select name="edad" id="edad">
+            <option value="">Selecciona tu edad</option>
+            <option value="2001">año 2001</option>
+            <option value="2000">año 2000</option>
+            <option value="1999">año 1999</option>
+        </select><br>
+        <label for="sexo">Selecciona tu sexo</label>
+        <label>
+            <input type="radio" name="sexo" id="sexo" value="femenino">
+            femenino
+        </label>
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        <label>
+            <input type="radio" name="sexo" value="masculino">
+            masculino
+        </label><br>
+        <label for="telefono">Escrite tu número de teléfono</label>
+        <input type="tel" name="telefono" id="telefono"><br>
+        <label for="antojito">Selecciona los antojitos que te gustan</label><br>
+        <label>
+            <input type="checkbox" name="antojito[]" id="antojito" value="Pambazos">
+            Pambazos
+        </label><br>
+        <label>
+            <input type="checkbox" name="antojito[]" value="Tostadas">
+            Tostadas
+        </label><br>
+        <label>
+            <input type="checkbox" name="antojito[]" value="Atole">
+            Atole
+        </label><br>
+        <label>
+            <input type="checkbox" name="antojito[]" value="Caldo de camarón">
+            Caldo de camarón
+        </label><br>
+        <label>
+            <input type="checkbox" name="antojito[]" value="Flautas">
+            Flautas
+        </label><br>
+        <label>
+            <input type="checkbox" name="antojito[]" value="Enchiladas">
+            Enchiladas
+        </label><br>
+        <label>
+            <input type="checkbox" name="antojito[]" value="Pozole">
+            Pozole
+        </label><br>
+        <label>
+            <input type="checkbox" name="antojito[]" value="Torta de tamal">
+            Torta de tamal
+        </label><br>
+        <label for="comentarios">Escribe tus comentarios</label><br>
+        <textarea name="comentarios" id="comentarios" cols="100" rows="10"></textarea>
+        <!-- <br> -->
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        <button type="submit">enviar</button>
+    </form>
+</body>
+</html>
